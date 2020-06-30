@@ -11,12 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@home');
 
-Route::get('/register', function () {
-    return view('form');
-});
+Route::get('/register', 'AuthController@register');
 
-Route::post('/welcome', 'RegisterController@form');
+Route::post('/welcome', 'AuthController@form');
