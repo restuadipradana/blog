@@ -11,10 +11,6 @@
 |
 */
 
-// Route::get('/home', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', function () {
     return view('index');
 });
@@ -22,10 +18,5 @@ Route::get('/', function () {
 Route::get('/register', function () {
     return view('form');
 });
-
-Route::get('/welcome', function () {
-    return view('halo');
-});
-
 
 Route::post('/welcome', 'RegisterController@form');
